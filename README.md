@@ -77,7 +77,7 @@ const FMP_API_KEY = 'your_api_key_here';
 **取得 API 金鑰步驟：**
 1. 註冊 [Financial Modeling Prep](https://financialmodelingprep.com/) 帳戶
 2. 前往控制面板取得免費 API 金鑰
-3. 複製金鑰並替換程式碼中的 `'x'`
+3. 複製金鑰並替換程式碼中的 `'your_api_key_here'`
 
 <img width="3813" height="1695" alt="image" src="https://github.com/user-attachments/assets/a0f772e9-41c2-4623-a150-746b197aa83d" />
 
