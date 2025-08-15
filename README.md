@@ -1,4 +1,4 @@
-# 📈 StockMarketDaily - 智能股市監控系統
+# 📈 StockMarketDaily
 
 > 一個基於 Google Apps Script 的自動化股市監控與警報系統，支援股票、ETF、加密貨幣監控，並提供馬丁格爾投資策略模擬。
 
