@@ -36,7 +36,8 @@
 2. 點選「新增專案」
 3. 將專案命名為「StockMarketDaily」
 
-**📸 需要截圖：** *請提供 Google Apps Script 新建專案的畫面截圖*
+<img width="3600" height="1627" alt="image" src="https://github.com/user-attachments/assets/eb80f6b6-bdb1-4617-aa45-a939e55d797e" />
+
 
 #### 步驟 2：匯入程式碼
 
@@ -45,7 +46,9 @@
 3. 貼上至編輯器中
 4. 儲存專案 (Ctrl+S)
 
-**📸 需要截圖：** *請提供程式碼匯入完成後的編輯器畫面截圖*
+<img width="3400" height="1657" alt="image" src="https://github.com/user-attachments/assets/f9b6f6d2-8cf7-49b6-a966-75387bec67e5" />
+
+
 
 #### 步驟 3：設定 API 權限
 
@@ -53,7 +56,12 @@
 2. 授權應用程式存取權限
 3. 依序點選：允許 → 進階 → 前往專案 → 允許
 
-**📸 需要截圖：** *請提供權限授權流程的關鍵畫面截圖*
+<img width="915" height="618" alt="image" src="https://github.com/user-attachments/assets/3b73f33d-7a01-40e9-b25a-106ce20d1415" />
+<img width="1970" height="1802" alt="image" src="https://github.com/user-attachments/assets/1c4724a3-d8eb-4939-aa0d-d93cf20a16ea" />
+<img width="2022" height="1836" alt="image" src="https://github.com/user-attachments/assets/354eba27-904d-485b-b4be-83b75516deb0" />
+<img width="2022" height="1090" alt="image" src="https://github.com/user-attachments/assets/566d823f-75c3-4bb0-a854-dbbf3644df7d" />
+<img width="1422" height="1450" alt="image" src="https://github.com/user-attachments/assets/ee0978dc-85e6-4b2f-b4a2-8afdd7334bf8" />
+
 
 ---
 
@@ -71,7 +79,8 @@ const FMP_API_KEY = 'your_api_key_here';
 2. 前往控制面板取得免費 API 金鑰
 3. 複製金鑰並替換程式碼中的 `'x'`
 
-**📸 需要截圖：** *請提供 Financial Modeling Prep 控制面板中 API 金鑰位置的截圖*
+<img width="3813" height="1695" alt="image" src="https://github.com/user-attachments/assets/a0f772e9-41c2-4623-a150-746b197aa83d" />
+
 
 ### 📧 郵件設定
 
@@ -117,9 +126,12 @@ const MARTINGALE_MULTIPLIER = 1.5;           // 每層加倍倍數
    - **函數**：`checkMarketStatus`
    - **事件來源**：時間驅動
    - **時間觸發器類型**：日期計時器
-   - **時間**：建議設定為美股開盤後 (台灣時間 22:30)
+   - **時間**：建議設定為美股開盤後或收盤 <img width="2358" height="1219" alt="image" src="https://github.com/user-attachments/assets/be8dead3-4a56-4666-8c1f-e1d432219d68" />
 
-**📸 需要截圖：** *請提供觸發器設定完成的配置畫面截圖*
+
+<img width="3805" height="1661" alt="image" src="https://github.com/user-attachments/assets/44dccf51-a570-4049-b020-c32bd408f543" />
+<img width="1074" height="1229" alt="image" src="https://github.com/user-attachments/assets/58d6398f-c828-40ad-856a-c4a3b45ea762" />
+
 
 ---
 
@@ -134,7 +146,8 @@ const MARTINGALE_MULTIPLIER = 1.5;           // 每層加倍倍數
 - **馬丁格爾策略表**：詳細的投資層級模擬
 - **警報摘要**：觸發的警報條件列表
 
-**📸 需要截圖：** *請提供一份完整的郵件報告截圖範例*
+
+<img width="3348" height="1527" alt="image" src="https://github.com/user-attachments/assets/113f6da3-93aa-4cc3-8b0b-265a225d7d88" />
 
 ---
 
