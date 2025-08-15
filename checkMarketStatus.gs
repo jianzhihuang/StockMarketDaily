@@ -3,10 +3,10 @@
 // ===============================================================
 
 // 1. 貼上您從 Financial Modeling Prep 網站上取得的 API 金鑰
-const FMP_API_KEY = 'x';
+const FMP_API_KEY = 'your_api_key_here';
 
 // 2. 設定您要接收通知的 Email 地址
-const YOUR_EMAIL_ADDRESS = 'x';
+const YOUR_EMAIL_ADDRESS = 'YOUR_EMAIL_ADDRESS';
 
 // 3. 設定您要監控的商品清單
 const SYMBOLS_TO_TRACK = [
