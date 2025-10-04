@@ -127,13 +127,15 @@ function createMartingaleTable_HTML(ath, currentPrice, maxLevels) {
   const baseInvestment = MARTINGALE_TOTAL_CAPITAL / totalParts;
   let cumulativeCost = 0;
   let cumulativeShares = 0;
+  let cumulativeMultiplierSum = 0; // 追蹤累積倍數的總和
   for (let i = 0; i < maxLevels; i++) {
     const level = i + 1;
     const dropPercent = level * MARTINGALE_INTERVAL_PERCENT;
     const entryPrice = ath * (1 - dropPercent / 100);
-    const cumulativeMultiplier = Math.pow(MARTINGALE_MULTIPLIER, i);
+    const levelMultiplier = Math.pow(MARTINGALE_MULTIPLIER, i); // 當層的倍數
+    cumulativeMultiplierSum += levelMultiplier; // 累加倍數
     const stepMultiplier = (i === 0) ? "-" : `${MARTINGALE_MULTIPLIER}x`;
-    const investmentThisLevel = baseInvestment * cumulativeMultiplier;
+    const investmentThisLevel = baseInvestment * levelMultiplier;
     const sharesToBuy = investmentThisLevel / entryPrice;
     cumulativeCost += investmentThisLevel;
     cumulativeShares += sharesToBuy;
@@ -144,7 +146,7 @@ function createMartingaleTable_HTML(ath, currentPrice, maxLevels) {
                <td style="text-align: center;">${level}</td>
                <td style="text-align: right;">${entryPrice.toFixed(2)} (跌${dropPercent.toFixed(1)}%)</td>
                <td style="text-align: center;">${stepMultiplier}</td>
-               <td style="text-align: center;">${cumulativeMultiplier.toFixed(2)}x</td>
+               <td style="text-align: center;">${cumulativeMultiplierSum.toFixed(2)}x</td>
                <td style="text-align: right;">$${Math.round(investmentThisLevel).toLocaleString()}</td>
                <td style="text-align: right;">$${Math.round(cumulativeCost).toLocaleString()}</td>
                <td style="text-align: right;">${averagePrice.toFixed(2)}</td>
